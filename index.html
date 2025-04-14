@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IQRA</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="site-header">
+    
+    <div class="logo">
+      <img src="./assets/images/logo.png" alt="IQRA Logo" class="logo-img">
+      IQRA
+    </div>    
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">FAQs</a> 
+      <button class="support">Support</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="text-content">
+        <h1>ISLAM, AS TOLD BY THE QU'RAN</h1>
+        <p>Learn what Islam truly teaches — straight from the Qur’an</p>
+      </div>
+      <div class="image-content">
+        <img src="./assets/images/muslims2.png" alt="Illustration of a Muslim woman holding the Qur'an">
+      </div>
+    </section>
+
+    <!-- Explore by Theme Section -->
+    <section class="themes">
+      <h2>Explore by Theme</h2>
+      <div class="theme-cards">
+    
+        <a href="justice.html" class="card">
+          <div class="icon">
+            <img src="./assets/images/scale2.png" alt="Illustration of a scale">
+          </div>
+          <p>Justice</p>
+        </a>
+    
+        <a href="mercy.html" class="card">
+          <div class="icon">
+            <img src="./assets/images/heart2.png" alt="Illustration of a heart">
+          </div>
+          <p>Mercy</p>
+        </a>
+    
+        <a href="family.html" class="card">
+          <div class="icon">
+            <img src="./assets/images/familyFront.png" alt="Illustration of a hijabi lady">
+          </div>
+          <p>Family</p>
+        </a>
+    
+        <a href="creation.html" class="card">
+          <div class="icon">
+            <img src="./assets/images/environment2.png" alt="Illustration of the globe">
+          </div>
+          <p>Creation</p>
+        </a>
+
+<!-- Magic Card -->
+<a href="witchcraft.html" class="card">
+  <div class="icon">
+    <img src="./assets/images/witchcraft.png" alt="Illustration of witchcraft">
+  </div>
+  <p>Witchcraft</p>
+</a>
+
+<!-- Interest Card -->
+<a href="interest.html" class="card">
+  <div class="icon">
+    <img src="./assets/images/interest.png" alt="Illustration of a lightbulb or book">
+  </div>
+  <p>Interest</p>
+</a>
+
+
+
+
+
+    
+      </div>
+    </section>
+
+    <!-- What the Qur’an Really Says Section -->
+
+<section class="quran-says">
+  <h2>What the Qur’an Really Says</h2>
+  <div class="question-cards">
+    <a href="violence.html" class="card">
+      <div class="icon"></div>
+      <p>Does Islam promote violence?</p>
+      <span class="arrow">→</span>
+    </a>
+    <a href="women.html" class="card">
+      <div class="icon"></div>
+      <p>Are women oppressed in Islam?</p>
+      <span class="arrow">→</span>
+    </a>
+    <a href="otherBooks.html" class="card">
+      <div class="icon"></div>
+      <p>What does Islam say about other religions?</p>
+      <span class="arrow">→</span>
+    </a>
+  </div>
+</section>
+
+
+    <!-- Why Is It Haram Section -->
+    <section class="questions">
+      <h2>Why Is It Haram?</h2>
+      <div class="question-cards">
+    
+        <a href="pork.html" class="card">
+          <div class="icon">
+            <img src="./assets/images/pig2.png" alt="Illustration of a pig">
+          </div>
+          <p>Why is pork forbidden?</p>
+          <span class="arrow">→</span>
+        </a>
+    
+        <a href="smoking.html" class="card">
+          <div class="icon">
+            <img src="./assets/images/cig.png" alt="Illustration of a cigarette">
+          </div>
+          <p>Why is smoking prohibited?</p>
+          <span class="arrow">→</span>
+        </a>
+    
+        <a href="alcohol.html" class="card">
+          <div class="icon">
+            <img src="./assets/images/wine.png" alt="Illustration of an alcoholic drink">
+          </div>
+          <p>Why is drinking alcohol prohibited?</p>
+          <span class="arrow">→</span>
+        </a>
+    
+      </div>
+    </section>
+    
+
+    <!-- Random Verse Generator Section -->
+    <section class="random-verse">
+      <div class="verse-icon">
+        <img src="./assets/images/insight.png" alt="Verse icon">
+      </div>
+      <div class="verse-text">
+        <h2>Interactive Verse Explorer</h2>
+        <p id="verse-text">Discover the meaning and significance of different Qur'anic Verses</p>
+        <p id="verse-explanation"></p>
+        <button onclick="showVerse()">Show Verse</button>
+      </div>
+    </section>
+    
+    
+    <script>
+      const verses = [
+  {
+    text: "Indeed, with hardship comes ease. (94:6)",
+    explanation: "This verse reassures that after every difficulty, relief and ease will follow. It's repeated twice in the surah for emphasis."
+  },
+  {
+    text: "God does not burden a soul beyond what it can bear. (2:286)",
+    explanation: "Allah reminds us that we will never be tested with more than we can handle, encouraging patience and strength."
+  },
+  {
+    text: "Say, 'My Lord has commanded justice.' (7:29)",
+    explanation: "The Qur’an places a strong emphasis on fairness and moral responsibility, rooted in divine guidance."
+  }
+];
+
+    
+function showVerse() {
+  const box = document.getElementById("verse-text");
+  const explain = document.getElementById("verse-explanation");
+  const random = verses[Math.floor(Math.random() * verses.length)];
+  box.textContent = random.text;
+  explain.textContent = random.explanation;
+}
+
+    </script>
+    
+    <!-- Chat with Muslims Section -->
+    <section class="chat">
+      <div class="chat-image">
+        <img src="./assets/images/computer.png" alt="Chat interface illustration">
+      </div>
+      <div class="chat-text">
+        <h2>Chat with Muslims</h2>
+        <p>Join our chat server to ask questions and engage in discussions with Muslims!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <a href="islam.html">What's Islam?</a>
+      <a href="whoRwe.html">Who Are We?</a>
+      <p>&copy; 2025 IQRA — Spreading knowledge, one verse at a time.</p>
+      <div class="footer-links">
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>
+
